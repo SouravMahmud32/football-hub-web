@@ -89,9 +89,6 @@ main{
 .banner_image {
 	padding-top: 306px;
 	padding-left: 121px;
-	padding-right: 100px;
-	padding-bottom: 110px;
-    margin-bottom: -83px;
 }
 
 /* Banner Part End */
@@ -245,21 +242,35 @@ main{
     }
     .banner_part {
         align-items: left;
-    /* width: 100%; */
-    /* height: 646px; */
     background-color: #161616;
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-gap: 50px;
-    /* border-radius: 30px; */
-    /* -webkit-border-radius: 30px; */
-}
+    }
+    .banner_text{
+        padding: 8px;
+        margin-right: 50px;
+    }
     .banner_para{
         align-items: center;
+    }
+    .banner_image{
+        padding-top: 0px;
+        padding-left: 0px;
     }
     .copyright_text{
         align-items: center;
         float: left;
+        flex-direction: column;
+        display: flex;
+    }
+    .footer_text{
+        padding-top: 15px;
+    }
+    .footer_icon{
+        margin-top: 50px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
     }
   }
 
@@ -270,12 +281,30 @@ main{
         width: 100%;
         justify-content: center;
     }
-    .banner_part, .total_update, .updates_one{
-        grid-template-columns: repeat(2, 1fr);
+    .updates_one {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 28px;
+    }
+    .banner_part {
+        align-items: center;
+        background-color: #161616;
+        display: flex;
+    }
+
+    .banner_image{
+        padding-top: 488px;
+        padding-left: 0px;
+        margin-bottom: -111px;
     }
 
     .footer_part{
         width: 100%;
+    }
+
+    .footer_icon{
+        margin-top: 50px;
+        color: #ffffff;
     }
     
 }
