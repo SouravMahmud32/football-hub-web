@@ -1,0 +1,282 @@
+/* common css */
+
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Banner Part Start */
+
+.container{
+    width: 100%;
+}
+
+.banner_part {
+    align-items: center;
+    background-color: #161616;
+    display: flex;
+    grid-gap: 50px;
+}
+
+.banner_text{
+    padding-left: 106px;
+    padding-top: 10px;
+    padding-bottom: 111px;
+}
+
+.banner_title{
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner_para{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.buttons {
+	width: 186px;
+	height: 56px;
+	background-color: #dd0000;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.buttons {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+.fa-chevron-right{
+    color: #ffffff;
+}
+
+.banner_image {
+	padding-top: 306px;
+	padding-left: 121px;
+	padding-right: 100px;
+	padding-bottom: 110px;
+    margin-bottom: -83px;
+}
+
+/* Banner Part End */
+
+/* Update Part Start */
+.container{
+    width: 100%;
+}
+
+.total_update{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.update_bar{
+    width: 313px;
+    height: 313px;
+    background-color: #161616;
+    margin-top: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.link_bar{
+    padding: 10px;
+    text-align: center;
+}
+
+.link_bar a{
+    text-decoration: none;
+    color: #161616;
+}
+
+.bar_one{
+	width: 270px;
+	height: 85px;
+	background-color: #ffffff;
+	color: #161616;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.bar_one:hover {
+    background-color: #dd0000;
+}
+
+/* Article Part */
+
+.updates_one{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 28px;
+}
+
+.article_part{
+    margin-top: 50px;
+}
+
+
+/* Update Part End */
+
+
+/* Footer Part Start */
+
+.footer_part{
+    width: 100%;
+    height: 239px;
+    background-color: #0A0826;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer_text{
+    padding-top: 50px;
+}
+
+.footer_title{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_menu a{
+    text-decoration: none;
+    color: #D9DBE1;
+    padding-left: 50px;
+}
+
+.copyright_text{
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_icon{
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.fa-instagram{
+    padding-left: 35px;
+}
+
+.fa-facebook{
+    padding-left: 35px;
+}
+
+.fa-twitter{
+    padding-left: 35px;
+}
+
+.fa-youtube{
+    padding-left: 35px;
+}
+
+/* Footer Part End */
+
+
+/* Media Queries */
+
+/* Mobile Devices */
+
+
+
+@media screen and (max-width: 480px) {
+    main{
+        margin: auto;
+    }
+     .total_update, .updates_one{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner_part {
+        align-items: left;
+    /* width: 100%; */
+    /* height: 646px; */
+    background-color: #161616;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-gap: 50px;
+    /* border-radius: 30px; */
+    /* -webkit-border-radius: 30px; */
+}
+    .banner_para{
+        align-items: center;
+    }
+    .copyright_text{
+        align-items: center;
+        float: left;
+    }
+  }
+
+/* Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        justify-content: center;
+    }
+    .banner_part, .total_update, .updates_one{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_part{
+        width: 100%;
+    }
+    
+}
+ 
